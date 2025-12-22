@@ -120,11 +120,11 @@
         <div class="infos_container">
             <div class="infos_container_left" >
                 <i class='bxr  bx-envelope' style='color: #fefefe; font-size: 3vmin ;font-weight: bold;'></i> 
-                <a href="mailTo : mouadsbaer@gmail.com" style='color: #fefefe; z-index: 99;'>mouadsbaer@gmail.com</a>
+                <a href="mailTo : test@gmail.com" style='color: #fefefe; z-index: 99;'>test@gmail.com</a>
             </div>
             
             <div class="infos_container_right" style="display: flex; flex-direction: column; gap: 10px;">
-                 <div><a href="https://www.linkedin.com/in/mouad-sbaer-1499a0374/"><i class="fa-brands fa-linkedin" style="color: #fefefe; font-size: 3vmin;"></i></a></div>
+                 <div><a href="https://www.linkedin.com/in/test-1499a0374/"><i class="fa-brands fa-linkedin" style="color: #fefefe; font-size: 3vmin;"></i></a></div>
                 <div><a href="#"><i class="fa-brands fa-facebook" style='color: #fefefe; font-size: 3vmin;'></i></a></div>
                 <div><a href="#"><i class="fa-brands fa-instagram" style="color: #fefefe; font-size: 3vmin;"></i></a></div>
     
@@ -136,7 +136,7 @@
                 <div class="infos_container_center" style="z-index: 99;display: flex; flex-direction: column; padding: 35px 20px; gap: 10px;">
                     <div class="infos_container_center_cont">
                         <i class="fa-brands fa-github" style="color: #fefefe;"></i>
-                        <a href="https://github.com/mouadsbaer" style='color: #fefefe; font-size: 2vmin; font-weight: bold;'>mouad saber</a>
+                        <a href="https://github.com/test" style='color: #fefefe; font-size: 2vmin; font-weight: bold;'>test test</a>
                     </div>
                     <div class="infos_container_center_cont" style="display: flex;">
                         <i class='bxr  bx-phone bx-flip-horizontal' style='color: #fefefe;'></i> 

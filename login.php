@@ -1,12 +1,12 @@
 <?php
 
-
-    session_start();
     // Insetion de fichier pour connecter la base de donnees :
     include 'connect/db_connexion.php';
 
-    // Validation de formulaire de connexion :
+    // Gestion des types des utilisateurs :
+    $account_type = (isset($_GET['account_type'])) ? intval($_GET['account_type']) : 0;
 
+    // Validation de formulaire de connexion :
     $email = $pass = '';
     $errors = array('email' => '' , 'password' => '');
     if(isset($_POST['submit'])){
@@ -146,9 +146,9 @@
             </div>
             
         </div>
-        <div class="body_part2_parag">
-                <p>A universal solution <br> for financial customers and banks br providing 
-comprehensive banking services around the world</p>
+        <div class="body_part2_parag" style="font-size:2.7vmin; font-weight : 600; background:linear-gradient(to bottom, blue, white); -webkit-background-clip: text; background-clip: text;">
+                <p>" A universal solution <br> for financial customers and banks br providing 
+comprehensive banking services around the world "</p>
         </div>
     </section>
     <section class="section_account">
@@ -162,7 +162,7 @@ comprehensive banking services around the world</p>
                 <div><input type="text" placeholder="Type your email here" id="email_input" name="email_input" value="<?php echo $email ?>"><div style="color:red; font-size:1.6vmin; width:50%"> <?php echo $errors['email'] ?></div></div>
                 <div><input type="password" placeholder="Type your password here" id="password_input" name="password_input" value="<?php echo $pass ?>"><div style="color:red; font-size:1.6vmin; width:50%"> <?php echo $errors['password'] ?></div></div>
                 <div class="section_account_inputs_msgs">
-                    <p class="msg_create"><a href="register.php">Create account</a></p>
+                    <p class="msg_create"><a href="register.php" style="<?php echo ($account_type == 'user') ? 'display:block' : 'display:none' ?>">Create account</a></p>
                     <p class="msg_forgot"><a href="Forgot.php">Forgot your password ?</a></p>
                 </div>
                 <div class="container_btn_envoyer">
@@ -177,11 +177,11 @@ comprehensive banking services around the world</p>
         <div class="infos_container">
             <div class="infos_container_left" >
                 <i class='bxr  bx-envelope' style='color: #fefefe; font-size: 3vmin ;font-weight: bold;'></i> 
-                <a href="mailTo : mouadsbaer@gmail.com" style='color: #fefefe; z-index: 99;'>mouadsbaer@gmail.com</a>
+                <a href="mailTo : test@gmail.com" style='color: #fefefe; z-index: 99;'>test@gmail.com</a>
             </div>
             
             <div class="infos_container_right" style="display: flex; flex-direction: column; gap: 10px;">
-                 <div><a href="https://www.linkedin.com/in/mouad-sbaer-1499a0374/"><i class="fa-brands fa-linkedin" style="color: #fefefe; font-size: 3vmin;"></i></a></div>
+                 <div><a href="https://www.linkedin.com/in/test-1499a0374/"><i class="fa-brands fa-linkedin" style="color: #fefefe; font-size: 3vmin;"></i></a></div>
                 <div><a href="#"><i class="fa-brands fa-facebook" style='color: #fefefe; font-size: 3vmin;'></i></a></div>
                 <div><a href="#"><i class="fa-brands fa-instagram" style="color: #fefefe; font-size: 3vmin;"></i></a></div>
     
@@ -193,7 +193,7 @@ comprehensive banking services around the world</p>
                 <div class="infos_container_center" style="z-index: 99;display: flex; flex-direction: column; padding: 35px 20px; gap: 10px;">
                     <div class="infos_container_center_cont">
                         <i class="fa-brands fa-github" style="color: #fefefe;"></i>
-                        <a href="https://github.com/mouadsbaer" style='color: #fefefe; font-size: 2vmin; font-weight: bold;'>mouad saber</a>
+                        <a href="https://github.com/test" style='color: #fefefe; font-size: 2vmin; font-weight: bold;'>test</a>
                     </div>
                     <div class="infos_container_center_cont" style="display: flex;">
                         <i class='bxr  bx-phone bx-flip-horizontal' style='color: #fefefe;'></i> 
